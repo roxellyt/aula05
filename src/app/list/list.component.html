@@ -4,7 +4,7 @@
 
     <th>Opções</th>
   </tr>
-  <tr *ngFor="let item of list; index as i">
+  <tr *ngFor="let item of list, index as i">
     <td>
       <a [routerLink]="['/list', i]">{{ item.id }}</a>
     </td>
